@@ -15,6 +15,10 @@
     "datepicker",
     "modal"
   ],
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mashmatrix/react-lightning-design-system.git"
@@ -31,7 +35,7 @@
     "lint:test": "eslint --ext .js test/**",
     "build": "babel -d lib/ src/",
     "build:assets": "cp -r node_modules/@salesforce-ux/design-system/assets public",
-    "build:storybook": "build-storybook -o public",
+    "build:storybook": "build-storanonymousybook -o public",
     "deploy": "npm-run-all build:storybook build:assets deploy:ghpage",
     "deploy:ghpage": "gh-pages -d public"
   },
