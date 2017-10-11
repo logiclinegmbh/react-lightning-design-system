@@ -1,4 +1,5 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import moment from 'moment';
 import Button from './Button';
@@ -115,7 +116,6 @@ export default class Datepicker extends Component {
   }
 
   onDateClick(date) {
-    console.log('onDateClick', date);
     if (this.props.onSelect) {
       this.props.onSelect(date);
     }
@@ -124,7 +124,6 @@ export default class Datepicker extends Component {
   onDateFocus(date) {
     if (this.state.targetDate !== date) {
       setTimeout(() => {
-        console.log('onDateFocus=>', date);
         this.setState({ targetDate: date });
       }, 10);
     }
