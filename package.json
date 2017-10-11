@@ -1,6 +1,6 @@
 {
   "name": "@logicline/react-lightning-design-system",
-  "version": "2.4.0.1",
+  "version": "2.4.0-1",
   "description": "Salesforce Lightning Design System components built with React, based on mashmatrix/react-lightning-design-system",
   "main": "lib/scripts/index.js",
   "keywords": [
